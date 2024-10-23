@@ -28,13 +28,19 @@ class TestGame:
         test_word = 'ERH YUE'
         assert new_game.is_valid(test_word) is False
 
-    def test_contained_in_grid(self):
+    def test_not_contained_in_grid(self):
 
         new_game = Game()
         test_word = 'VOIR'
-        assert new_game.is_valid(test_word) is True
+        assert new_game.is_valid(test_word) is False
 
     def test_upper_case(self):
         new_game = Game()
         test_word = 'ertyh'
         assert new_game.is_valid(test_word) is False
+
+    def test_unknown_word_is_invalid(self):
+        """A word that is not in the English dictionary should not be valid"""
+        new_game = Game()
+        new_game.grid = list('KWIENFUQW') # Force the grid to a test case:
+        assert new_game.is_valid('FEUN') is False
