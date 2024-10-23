@@ -17,6 +17,6 @@ class Game:
 
 if __name__ == "__main__":
     game = Game()
-    print(game.grid) # --> OQUWRBAZE
+    print(game.grid)
     my_word = 'TOMATO'
-    print(game.is_valid(my_word)) # --> True
+    print(game.is_valid(my_word))
