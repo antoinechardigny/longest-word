@@ -28,11 +28,11 @@ class TestGame:
         test_word = 'ERH YUE'
         assert new_game.is_valid(test_word) is False
 
-    def test_contained_in_grid(self):
+    def test_not_contained_in_grid(self):
 
         new_game = Game()
         test_word = 'VOIR'
-        assert new_game.is_valid(test_word) is True
+        assert new_game.is_valid(test_word) is False
 
     def test_upper_case(self):
         new_game = Game()

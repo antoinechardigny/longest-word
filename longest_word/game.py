@@ -15,8 +15,8 @@ class Game:
             is_valid = False
         return is_valid
 
-if __name__ == "__main__":
-    game = Game()
-    print(game.grid)
-    my_word = 'TOMATO'
-    print(game.is_valid(my_word))
+# if __name__ == "__main__":
+#     game = Game()
+#     print(game.grid)
+#     my_word = 'TOMATO'
+#     print(game.is_valid(my_word))
