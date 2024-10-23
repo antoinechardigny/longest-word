@@ -3,7 +3,7 @@ import requests
 class Game:
     def __init__(self) -> list:
         """Attribute a random grid to size 9"""
-        self.grid = ['G','R','T','T','O','A','B','M','O']
+        self.grid = ['E','F','T','T','O','A','B','U','N']
 
     def is_valid(self, word: str) -> bool:
         """Return True if and only if the word is valid, given the Game's grid"""
